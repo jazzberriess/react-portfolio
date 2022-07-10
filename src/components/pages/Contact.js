@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function Contact() {
-  <div class="contact-flex-item1">
+  <div className="contact-flex-item1">
     <h2 id="contact">Get in Touch</h2>
     <p>
       If you want to get in touch to discuss project or collaboration
