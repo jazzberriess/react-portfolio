@@ -23,9 +23,66 @@ ul {
 }
 
 #contact-nav {
+  padding-top: 2rem;
   text-align: center;
 }
 
 .bold {
   font-weight: 900;
+}
+
+/* positioninig portfolio images for text overlay */
+.parent {
+  position: relative;
+  width: 100%;
+}
+
+/* text overlay */
+.text {
+  opacity: 0;
+  position: absolute;
+  bottom: 1rem;
+  background: linear-gradient(
+    to left,
+    rgba(57, 57, 57, 0.1),
+    rgba(57, 57, 57, 1)
+  );
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/* text overlay link styling */
+.text a {
+  opacity: 0;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  text-align: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+/* toggle opacity for link on hover */
+.parent:hover .text,
+.text a,
+.parent:active .text,
+.text a {
+  transition: 1s ease-in-out;
+  opacity: 100;
+}
+
+/* invert black icons on dark background */
+.inverted-icons .inverted-icons:hover {
+  filter: invert(1);
+}
+
+/* media query to handle hover state on mobile and tablet devices */
+/* https://gist.github.com/perjo927/e1f114398fc6fb8538a1412bea800f1a */
+@media (pointer: coarse), (pointer: none) {
+  .text,
+  .text a {
+    opacity: 100;
+  }
 }
