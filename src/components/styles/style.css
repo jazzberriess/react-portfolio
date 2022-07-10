@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 1.15rem;
+  height: 100%;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  line-height: 2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.bold {
+  font-weight: 900;
+}
