@@ -18,6 +18,14 @@ ul {
   list-style: none;
 }
 
+.contact-icons {
+  margin: 1rem;
+}
+
+#contact-nav {
+  text-align: center;
+}
+
 .bold {
   font-weight: 900;
 }
