@@ -12,4 +12,7 @@ export default function PortfolioContainer() {
       return <Contact />;
     }
   };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+  return { renderPage };
 }
