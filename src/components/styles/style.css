@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
+:root {
+  --blue: #5a819e;
+  --beige: #ffe5c4;
+  --orange: #ffc1aa;
+  --purple: #7c7aa1;
+  --pink: #f59c9c;
+  --teal: #6ec3c0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -7,17 +16,61 @@
 html,
 body {
   scroll-behavior: smooth;
-  font-size: 1.15rem;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   font-family: 'Nunito', sans-serif;
   line-height: 2rem;
+  background-color: var(--blue);
+  color: var(--beige);
 }
 
+header {
+  background-color: var(--beige);
+  font-size: 2rem;
+  margin: 0;
+  padding-top: 2rem;
+}
+header a {
+  color: var(--blue) !important;
+  text-decoration: none;
+}
+
+footer {
+  color: var(--blue);
+  background-color: var(--beige);
+  margin-top: 8rem;
+  padding-bottom: 1rem;
+  width: 100vw;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* navigation list styling */
 ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  white-space: nowrap;
+  padding-right: 1rem;
+  width: 100%;
 }
 
+li {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+/* footer icon styling */
 .contact-icons {
   margin: 1rem;
 }
@@ -27,17 +80,22 @@ ul {
   text-align: center;
 }
 
+#contact-nav a {
+  color: var(--purple);
+}
+
+/* styling for bolded elements */
 .bold {
   font-weight: 900;
 }
 
-/* positioninig portfolio images for text overlay */
+/* positioning portfolio images for text overlay */
 .parent {
   position: relative;
   width: 100%;
 }
 
-/* text overlay */
+/* text overlay on portfolio images */
 .text {
   opacity: 0;
   position: absolute;
@@ -79,10 +137,17 @@ ul {
 }
 
 /* media query to handle hover state on mobile and tablet devices */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer */
 /* https://gist.github.com/perjo927/e1f114398fc6fb8538a1412bea800f1a */
 @media (pointer: coarse), (pointer: none) {
   .text,
   .text a {
     opacity: 100;
   }
+}
+
+.profile-pic {
+  width: 33%;
+  height: auto;
+  border-radius: 50%;
 }

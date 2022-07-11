@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   return (
-    <section>
+    <footer>
       <div className="container" role="navigation" aria-label="Contact details">
         <div className="row u-width-full" id="contact-nav">
           <a
@@ -14,7 +14,7 @@ export default function Footer() {
           >
             <FontAwesomeIcon
               icon={faGithubSquare}
-              size="xl"
+              size="2xl"
               alt="gitHub icon"
               className="contact-icons"
             />
@@ -27,7 +27,7 @@ export default function Footer() {
             <FontAwesomeIcon
               icon={faLinkedin}
               alt="LinekedIn icon"
-              size="xl"
+              size="2xl"
               className="contact-icons"
             />
           </a>
@@ -38,13 +38,14 @@ export default function Footer() {
           >
             <FontAwesomeIcon
               icon={faEnvelope}
-              size="xl"
+              size="2xl"
               alt="Email icon"
               className="contact-icons"
             />
           </a>
         </div>
       </div>
-    </section>
+      <p>Dreamed, designed and developed by Christi 2022 &copy; </p>
+    </footer>
   );
 }
