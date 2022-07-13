@@ -7,6 +7,7 @@
   --purple: #7c7aa1;
   --pink: #f59c9c;
   --teal: #6ec3c0;
+  --split: linear-gradient(var(--beige), var(--blue));
 }
 
 * {
@@ -29,6 +30,7 @@ header {
   font-size: 2rem;
   margin: 0;
   padding-top: 2rem;
+  color: var(--blue);
 }
 header a {
   color: var(--blue) !important;
@@ -38,10 +40,23 @@ header a {
 footer {
   color: var(--blue);
   background-color: var(--beige);
-  margin-top: 8rem;
+  margin-top: 4rem;
   padding-bottom: 1rem;
   width: 100vw;
   text-align: center;
+}
+
+main {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#contact-form {
+  text-align: left;
+}
+
+#example-message {
+  resize: vertical;
 }
 
 .navigation {
@@ -61,6 +76,7 @@ ul {
   white-space: nowrap;
   padding-right: 1rem;
   width: 100%;
+  margin-top: 2rem;
 }
 
 li {
@@ -150,4 +166,5 @@ li {
   width: 33%;
   height: auto;
   border-radius: 50%;
+  padding: 2rem;
 }

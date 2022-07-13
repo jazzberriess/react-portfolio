@@ -8,7 +8,7 @@ export default function Home() {
       <div className="row">
         <h1>Hi there, I'm Christi!</h1>
         <img
-          class="profile-pic"
+          className="profile-pic"
           src={profilepic}
           alt="A photograph of Christi with one of their cats."
         />

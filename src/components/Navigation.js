@@ -4,6 +4,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
   return (
     <div className="container">
       <div className="row">
+        <h1>Christi Scappatura</h1>
         <nav className="navigation">
           <ul role="navigation" aria-label="Primary navigation">
             <li className="two columns">
