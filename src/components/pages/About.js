@@ -30,11 +30,6 @@ export default function About() {
           I'm currently expanding my skillset to include
           <span className="bold">React</span>.
         </p>
-        <p>
-          I have two feline co-workers who sometimes like to help me with
-          projects. They're both aspiring Koding Kitties, who seemingly want to
-          specialise in keyboard accessibility.
-        </p>
       </div>
     </div>
   );

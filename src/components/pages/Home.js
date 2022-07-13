@@ -12,7 +12,16 @@ export default function Home() {
           src={profilepic}
           alt="A photograph of Christi with one of their cats."
         />
-        <p>Junior Full-Stack Web Developer</p>
+        <p>
+          Junior Full-Stack Web Developer with a background in customer service.
+          I'm a communicative collaborator and team-player with strengths in
+          adaptability and delivering objectives on-time.
+        </p>
+        <p>
+          I have two feline co-workers who sometimes like to help me with
+          projects. They're both aspiring Koding Kitties, who seemingly want to
+          specialise in keyboard accessibility.
+        </p>
       </div>
     </div>
   );

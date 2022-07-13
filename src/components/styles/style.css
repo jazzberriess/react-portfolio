@@ -156,6 +156,18 @@ li {
   filter: invert(1);
 }
 
+.profile-pic {
+  width: 33%;
+  height: auto;
+  border-radius: 50%;
+  padding: 2rem;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
 /* media query to handle hover state on mobile and tablet devices */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer */
 /* https://gist.github.com/perjo927/e1f114398fc6fb8538a1412bea800f1a */
@@ -164,11 +176,4 @@ li {
   .text a {
     opacity: 100;
   }
-}
-
-.profile-pic {
-  width: 33%;
-  height: auto;
-  border-radius: 50%;
-  padding: 2rem;
 }
