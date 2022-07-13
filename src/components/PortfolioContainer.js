@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Navigation from './Navigation';
+import Header from './Header';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
+import Footer from './Footer';
 import './styles/normalize.css';
 import './styles/skeleton.css';
 import './styles/style.css';
@@ -29,13 +30,9 @@ export default function PortfolioContainer() {
 
   return (
     <>
-      <header>
-        <Navigation
-          currentPage={currentPage}
-          handlePageChange={handlePageChange}
-        />
-      </header>
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       <main>{renderPage()}</main>
+      <Footer />
     </>
   );
 }

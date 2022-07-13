@@ -37,6 +37,10 @@ header a {
   text-decoration: none;
 }
 
+header h1 {
+  text-align: center;
+}
+
 footer {
   color: var(--blue);
   background-color: var(--beige);
