@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/www.jazzberriess.github.io/react-portfolio/static/css/main.60af0678.css",
+    "main.js": "/www.jazzberriess.github.io/react-portfolio/static/js/main.f754dedf.js",
+    "static/media/profile-image.jpg": "/www.jazzberriess.github.io/react-portfolio/static/media/profile-image.3abfb98eaad6cd8bf68b.jpg",
+    "static/media/book-taku.png": "/www.jazzberriess.github.io/react-portfolio/static/media/book-taku.303aadb3a4533872f0aa.png",
+    "static/media/weather-dashboard.png": "/www.jazzberriess.github.io/react-portfolio/static/media/weather-dashboard.3491ca078801a20ea97a.png",
+    "static/media/pokeball-splash-page.png": "/www.jazzberriess.github.io/react-portfolio/static/media/pokeball-splash-page.854631dbc9fc91c0223f.png",
+    "static/media/tech-blog.png": "/www.jazzberriess.github.io/react-portfolio/static/media/tech-blog.ff3df272d08af6b508db.png",
+    "static/media/social-network-api.png": "/www.jazzberriess.github.io/react-portfolio/static/media/social-network-api.7a65a0bcd065bb7d129b.png",
+    "static/media/team-profile-generator.png": "/www.jazzberriess.github.io/react-portfolio/static/media/team-profile-generator.f2c7546774aaadb90901.png",
+    "index.html": "/www.jazzberriess.github.io/react-portfolio/index.html",
+    "main.60af0678.css.map": "/www.jazzberriess.github.io/react-portfolio/static/css/main.60af0678.css.map",
+    "main.f754dedf.js.map": "/www.jazzberriess.github.io/react-portfolio/static/js/main.f754dedf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60af0678.css",
+    "static/js/main.f754dedf.js"
+  ]
+}
