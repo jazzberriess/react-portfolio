@@ -71,7 +71,7 @@ export default function Form() {
                 value={name}
                 name="name"
                 onChange={handleInputChange}
-                type=" text"
+                type="text"
                 placeholder="Your Name"
                 id="name-input"
               />

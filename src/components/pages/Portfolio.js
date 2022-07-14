@@ -25,6 +25,8 @@ export default function Portfolio() {
       image: pokeball,
       projectUrl: 'https://jazzberriess.github.io/collab-what-pkmn-are-you/',
       githubUrl: 'https://github.com/jazzberriess/collab-what-pkmn-are-you',
+      projectDescription:
+        'A collaborative project to discover what kind of Pokémon you are based on music preference.',
     },
     {
       id: 2,
@@ -33,6 +35,8 @@ export default function Portfolio() {
       image: booktaku,
       projectUrl: 'https://book-taku.herokuapp.com/',
       githubUrl: 'https://github.com/jazzberriess/Book-taku',
+      projectDescription:
+        'A collorative project to create a book database which users can interact with to see information about a list of books and add comments to books.',
     },
     {
       id: 3,
@@ -41,6 +45,8 @@ export default function Portfolio() {
       image: techblog,
       projectUrl: 'https://salty-citadel-76451.herokuapp.com/',
       githubUrl: 'https://github.com/jazzberriess/tech-blog',
+      projectDescription:
+        'A CMS-style blogging application where you can share your thoughts about tech with the world!',
     },
     {
       id: 4,
@@ -50,6 +56,8 @@ export default function Portfolio() {
       image: socialnetwork,
       projectUrl: 'https://github.com/jazzberriess/social-network-api',
       githubUrl: 'https://github.com/jazzberriess/social-network-api',
+      projectDescription:
+        'A RESTful API for a social networking application built using MongoDB and Express. ',
     },
     {
       id: 5,
@@ -59,6 +67,8 @@ export default function Portfolio() {
       image: teamprofile,
       projectUrl: 'https://github.com/jazzberriess/team-profile-generator',
       githubUrl: 'https://github.com/jazzberriess/team-profile-generator',
+      projectDescription:
+        'A node.js powered application that is run from the terminal to dynamically generate a team roster built from the data that the user inputs.',
     },
     {
       id: 6,
@@ -67,6 +77,8 @@ export default function Portfolio() {
       image: weatherdashboard,
       projectUrl: 'https://jazzberriess.github.io/weather-dashboard/',
       githubUrl: 'https://github.com/jazzberriess/weather-dashboard',
+      projectDescription:
+        'A dashboard that displays the weather based on what city the user inputs.',
     },
   ];
 
@@ -81,24 +93,41 @@ export default function Portfolio() {
             collection of my work is available on GitHub. There, you can also
             find the links to the deployed applications.
           </p>
+          <p>
+            Click on the title of the project to visit the deployed application
+            and click on the gitHub icon to visit the repo.
+          </p>
           <p>Keep an eye on this space as I'm often updating what's on show.</p>
         </div>
       </div>
       <div className="container"></div>
       {portfolioProjects.map((item) => (
         <div key={item.id} className="row projects">
-          <div className="ten columns u-max-full-width parent">
+          <div className="six columns u-max-full-width parent">
             <img
               className="u-max-full-width project-image"
               src={item.image}
               alt={item.description}
             />
             <div className="text">
-              <a href={item.projectUrl}>{item.title}</a>
-
-              <a href={item.githubUrl} className="inverted-icons">
-                <FontAwesomeIcon icon={faGithub} size="lg" alt="gitHub icon" />
+              <a href={item.projectUrl} target="_blank" rel="noreferrer">
+                {item.title}
               </a>
+
+              <a
+                href={item.githubUrl}
+                className="inverted-icons"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  size="lg"
+                  alt="gitHub icon"
+                  target="_blank"
+                />
+              </a>
+              <p>{item.projectDescription}</p>
             </div>
           </div>
         </div>

@@ -166,11 +166,12 @@ button:active {
 /* text overlay on portfolio images */
 .text {
   opacity: 0;
+  align-items: center;
   position: absolute;
-  bottom: 1rem;
+  bottom: 25%;
   background: linear-gradient(
-    to left,
-    rgba(57, 57, 57, 0.1),
+    to top,
+    rgba(57, 57, 57, 0.5),
     rgba(57, 57, 57, 1)
   );
   width: 100%;
@@ -181,13 +182,18 @@ button:active {
 .text a {
   opacity: 0;
   margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 2rem;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   color: white;
   width: 100%;
+}
+
+.text p {
+  color: white;
+  margin-top: 1rem;
 }
 
 /* toggle opacity for link on hover */
@@ -196,7 +202,7 @@ button:active {
 .parent:active .text,
 .text a {
   transition: 1s ease-in-out;
-  opacity: 100;
+  opacity: 1;
 }
 
 /* invert black icons on dark background */
@@ -220,7 +226,7 @@ button:active {
 }
 /* styling for project images */
 .project-image {
-  width: 100%;
+  width: 1000%;
   object-fit: cover;
   border: solid 0.2rem black;
   box-shadow: 0.2rem 0.2rem 0.3rem var(--beige);
