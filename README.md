@@ -16,6 +16,8 @@ An updated professional portfolio showcasing a selection of projects I have work
 
 6. A [Weather Dashboard](https://github.com/jazzberriess/weather-dashboard) that displays the weather based on what city the user inputs.
 
+## Table of Contents
+
 - [Technologies](#technologies)
 - [Usage](#usage)
 - [Demo](#demo)
@@ -43,7 +45,7 @@ Head on over to my [Portfolio](https://jazzberriess.github.io/react-portfolio/) 
 
 ## License
 
-This project is covered under the [MIT license]()
+This project is covered under the [MIT license](https://github.com/jazzberriess/react-portfolio/blob/main/LICENSE)
 
 &copy; 2022 Christi Scappatura
 
