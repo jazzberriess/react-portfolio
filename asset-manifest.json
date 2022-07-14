@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.97dd2324.css",
-    "main.js": "/react-portfolio/static/js/main.0dbddd4a.js",
+    "main.js": "/react-portfolio/static/js/main.cfaff9c0.js",
     "static/media/profile-image.jpg": "/react-portfolio/static/media/profile-image.3abfb98eaad6cd8bf68b.jpg",
     "static/media/book-taku.png": "/react-portfolio/static/media/book-taku.303aadb3a4533872f0aa.png",
     "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.3491ca078801a20ea97a.png",
@@ -12,10 +12,10 @@
     "static/media/c-scappatura-technical-resume.pdf": "/react-portfolio/static/media/c-scappatura-technical-resume.14a8fe610cd757055e10.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.97dd2324.css.map": "/react-portfolio/static/css/main.97dd2324.css.map",
-    "main.0dbddd4a.js.map": "/react-portfolio/static/js/main.0dbddd4a.js.map"
+    "main.cfaff9c0.js.map": "/react-portfolio/static/js/main.cfaff9c0.js.map"
   },
   "entrypoints": [
     "static/css/main.97dd2324.css",
-    "static/js/main.0dbddd4a.js"
+    "static/js/main.cfaff9c0.js"
   ]
 }
