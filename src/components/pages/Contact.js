@@ -26,6 +26,13 @@ export default function Form() {
     }
   };
 
+  //https://developer.mozilla.org/en-US/docs/Web/API/Element/blur_event
+  const handleEmptyField = (event) => {
+    if (event.target.value.length === 0) {
+      setErrorMessage(`${event.target.name} field is required.`);
+    }
+  };
+
   //function to handle changes on contact form when submitted
   const handleFormSubmit = (event) => {
     event.preventDefault();
@@ -70,6 +77,7 @@ export default function Form() {
                 className="u-max-full-width"
                 value={name}
                 name="name"
+                onBlur={handleEmptyField}
                 onChange={handleInputChange}
                 type="text"
                 placeholder="Your Name"
@@ -83,6 +91,7 @@ export default function Form() {
                 value={email}
                 type="email"
                 name="email"
+                onBlur={handleEmptyField}
                 onChange={handleInputChange}
                 placeholder="youremail@email.com"
                 id="email-input"
@@ -95,6 +104,7 @@ export default function Form() {
             value={message}
             name="message"
             type="text"
+            onBlur={handleEmptyField}
             onChange={handleInputChange}
             placeholder="Your Message"
             id="example-message"

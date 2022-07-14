@@ -5,6 +5,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 
 //export Footer function
 export default function Footer() {
@@ -32,6 +33,18 @@ export default function Footer() {
               icon={faLinkedin}
               alt="LinekedIn icon"
               size="2xl"
+              className="contact-icons"
+            />
+          </a>
+
+          <a
+            href="https://stackoverflow.com/users/17728234/jazzberriess"
+            aria-label="Visit Christi's Stack Overflow profile"
+          >
+            <FontAwesomeIcon
+              icon={faStackOverflow}
+              size="2xl"
+              alt="stack overflow icon"
               className="contact-icons"
             />
           </a>
