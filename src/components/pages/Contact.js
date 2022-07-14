@@ -1,13 +1,17 @@
+//import react
 import React, { useState } from 'react';
 
+//import validation helpers
 import { validateEmail, validateMessage } from '../../utils/helpers';
 
+//function to render Form details
 export default function Form() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [error, setErrorMessage] = useState('');
 
+  //function to handle input changes on contact form
   const handleInputChange = (event) => {
     const { target } = event;
     const inputType = target.name;
@@ -22,30 +26,35 @@ export default function Form() {
     }
   };
 
+  //function to handle changes on contact form when submitted
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
+    //error message handling
     if (!validateEmail(email)) {
       setErrorMessage('Invalid email');
       return;
     }
 
+    //error message handling
     if (!validateMessage(message && name)) {
       setErrorMessage('Please enter your name and a message');
       return;
     }
 
+    //after form submission, set the name, email message and error message to be blank
     setName('');
     setEmail('');
     setMessage('');
     setErrorMessage('');
   };
 
+  //return html content
   return (
-    <>
+    <section>
       <div className="container">
         <div className="row">
-          <h2 id="contact">Get in Touch</h2>
+          <h2>Get in Touch</h2>
           <p>
             If you want to get in touch to discuss project or collaboration
             opportunities, work opportunities or have any questions about my
@@ -54,11 +63,11 @@ export default function Form() {
           </p>
         </div>
         <form id="contact-form">
-          <div class="row">
-            <div class="twelve columns">
-              <label for="your-name">Your Name</label>
+          <div className="row">
+            <div className="twelve columns">
+              <label htmlFor="your-name">Your Name</label>
               <input
-                class="u-max-full-width"
+                className="u-max-full-width"
                 value={name}
                 name="name"
                 onChange={handleInputChange}
@@ -67,10 +76,10 @@ export default function Form() {
                 id="name-input"
               />
             </div>
-            <div class="twelve columns">
-              <label for="email-input">Your Email</label>
+            <div className="twelve columns">
+              <label htmlFor="email-input">Your Email</label>
               <input
-                class="u-max-full-width"
+                className="u-max-full-width"
                 value={email}
                 type="email"
                 name="email"
@@ -80,9 +89,9 @@ export default function Form() {
               />
             </div>
           </div>
-          <label for="message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
-            class="u-full-width"
+            className="u-full-width"
             value={message}
             name="message"
             type="text"
@@ -90,7 +99,7 @@ export default function Form() {
             placeholder="Your Message"
             id="example-message"
           ></textarea>
-          <button class="button" onClick={handleFormSubmit}>
+          <button className="button" onClick={handleFormSubmit}>
             Submit
           </button>
         </form>
@@ -100,6 +109,6 @@ export default function Form() {
           </div>
         )}
       </div>
-    </>
+    </section>
   );
 }

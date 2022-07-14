@@ -1,36 +1,46 @@
+//import react
 import React from 'react';
 
+//import profile image
+import profilepic from '../../assets/images/profile-image.jpg';
+
+//function to render About details
 export default function About() {
   return (
-    <div className="container">
-      <div className="row">
-        <h2 id="about-me">About Me</h2>
-        <p>
-          I'm an enthusiastic full-stack junior to the world of web development.
-          For front-end development, I have skills in
-          <span className="bold"> HTML5, CSS</span> and
-          <span className="bold"> JavaScript</span>. I've also used libraries
-          such as <span className="bold"> jQuery</span> and CSS frameworks like
-          <span className="bold"> Bootstrap</span> and
-          <span className="bold"> Skeleton</span>. For back-end development, I
-          have experience in <span className="bold">node.js, express,</span> a
-          variety of
-          <span className="bold"> npm's, SQL, NoSQL databases</span> and the
-          <span className="bold">Sequelize and Mongoose ORMs</span>. I've also
-          used
-          <span className="bold"> Insomnia</span> for API testing and the
-          <span className="bold"> Heroku</span> platform to deploy completed
-          projects on. Outside of web-specific skills, I have extensive
-          experience in the customer service space, so my
-          <span className="bold"> interpersonal skills</span> and ability to
-          <span className="bold"> work as part of a successful team</span> are
-          impeccible.
-        </p>
-        <p>
-          I'm currently expanding my skillset to include
-          <span className="bold">React</span>.
-        </p>
+    <section>
+      <div className="container">
+        <div className="row">
+          <h2>Hi there, I'm Christi!</h2>
+          <img
+            className="profile-pic"
+            src={profilepic}
+            alt="A photograph of Christi with one of their cats."
+          />
+          <p>
+            Junior Full-Stack Web Developer with a background in customer
+            service. I'm a
+            <span className="bold"> communicative collaborator</span> and
+            <span className="bold"> team-player</span> with strengths in
+            <span className="bold"> adaptability</span> and
+            <span className="bold"> delivering objectives on-time</span>. A full
+            list of technical skills are on my resume page.
+          </p>
+
+          <p>
+            Outside of web-specific skills, I have extensive experience in the
+            customer service space, so my
+            <span className="bold"> interpersonal skills</span> and ability to
+            <span className="bold"> work as part of a successful team</span> are
+            impeccible.
+          </p>
+
+          <p>
+            I have two feline co-workers who sometimes like to help me with
+            projects. They're both aspiring Koding Kitties, who seemingly want
+            to specialise in keyboard accessibility.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

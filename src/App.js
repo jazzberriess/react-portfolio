@@ -1,11 +1,12 @@
 import React from 'react';
-// import Navigation from './components/Navigation';
-import PortfolioContainer from './components/PortfolioContainer';
+
+//import main content component
+import Content from './components/Content';
 
 export default function App() {
   return (
-    <div>
-      <PortfolioContainer />
+    <div className="content-wrapper">
+      <Content />
     </div>
   );
 }

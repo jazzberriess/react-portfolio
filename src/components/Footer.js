@@ -1,12 +1,16 @@
+//import react
 import React from 'react';
+
+//import fontAwesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
+//export Footer function
 export default function Footer() {
   return (
     <footer>
-      <div className="container" role="navigation" aria-label="Contact details">
+      <div className="container" role="navigation" aria-label="Contact links">
         <div className="row u-width-full" id="contact-nav">
           <a
             href="https://github.com/jazzberriess"

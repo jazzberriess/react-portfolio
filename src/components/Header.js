@@ -1,11 +1,10 @@
+//import react
 import React from 'react';
 
+//import Navigation component
 import Navigation from './Navigation';
 
-import './styles/normalize.css';
-import './styles/skeleton.css';
-import './styles/style.css';
-
+//export Header function
 export default function Header({ currentPage, handlePageChange }) {
   return (
     <header>

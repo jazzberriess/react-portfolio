@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+/* Import google font */
+@import url('https://fonts.googleapis.com/css?family=Istok+Web:300,400,500,700');
 
+/* set variables for colours */
 :root {
-  --blue: #5a819e;
-  --beige: #ffe5c4;
-  --orange: #ffc1aa;
-  --purple: #7c7aa1;
-  --pink: #f59c9c;
-  --teal: #6ec3c0;
-  --split: linear-gradient(var(--beige), var(--blue));
+  --blue: #3f739b;
+  --beige: #fdead1;
+  --teal: #11a19d;
 }
 
 * {
@@ -18,13 +16,22 @@ html,
 body {
   scroll-behavior: smooth;
   min-height: 100vh;
+  flex: 1;
   width: 100%;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Istok Web', sans-serif;
   line-height: 2rem;
   background-color: var(--blue);
   color: var(--beige);
 }
 
+/* content wrapper to help footer stay at the bottom of the page */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* styling for Header */
 header {
   background-color: var(--beige);
   font-size: 2rem;
@@ -41,36 +48,21 @@ header h1 {
   text-align: center;
 }
 
-footer {
-  color: var(--blue);
-  background-color: var(--beige);
-  margin-top: 4rem;
-  padding-bottom: 1rem;
-  width: 100vw;
-  text-align: center;
-}
-
-main {
-  text-align: center;
-  margin-top: 4rem;
-}
-
-#contact-form {
-  text-align: left;
-}
-
-#example-message {
-  resize: vertical;
-}
-
+/* navigation styling */
 .navigation {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* nav active link styling */
+.nav-link-active {
+  color: var(--teal) !important;
+  font-size: 2.3rem;
+}
+
 /* navigation list styling */
-ul {
+.navigation-list {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -83,30 +75,86 @@ ul {
   margin-top: 2rem;
 }
 
-li {
+.navigation-list li {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 0;
   max-width: 100%;
 }
 
-/* footer icon styling */
-.contact-icons {
-  margin: 1rem;
-}
-
-#contact-nav {
-  padding-top: 2rem;
+/* styling for Main */
+main {
   text-align: center;
-}
-
-#contact-nav a {
-  color: var(--purple);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* styling for bolded elements */
 .bold {
+  font-weight: 700;
+}
+
+/* setting font size for paragraphs and LI items */
+p,
+.skills li {
+  font-size: 1.7rem;
+}
+
+/* Contact form styling */
+/* setting text alignment for contact form */
+#contact-form {
+  text-align: left;
+}
+/* setting font colour for input and textareas on contact form */
+input,
+textarea {
+  color: var(--blue);
+}
+
+/* ensuring that message box can only be resized vertically */
+#example-message {
+  resize: vertical;
+}
+
+/* button styling for form submit */
+button {
   font-weight: 900;
+  color: var(--beige) !important;
+}
+
+button:hover,
+button:active {
+  color: white !important;
+  font-size: 1.15rem;
+}
+
+/* Resume page styling */
+
+/* styling for skills list */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.skills li {
+  display: flex;
+  justify-content: center;
+}
+
+/* styling for resume link */
+#resume {
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+#resume a {
+  text-decoration: none;
+  color: #dfeefa;
+}
+
+#resume a:hover,
+#resume a:active {
+  font-size: 2.55rem;
 }
 
 /* positioning portfolio images for text overlay */
@@ -156,6 +204,7 @@ li {
   filter: invert(1);
 }
 
+/* styling for profile image */
 .profile-pic {
   width: 33%;
   height: auto;
@@ -163,9 +212,41 @@ li {
   padding: 2rem;
 }
 
+/* styling for projects on protfolio page */
 .projects {
   display: flex;
   justify-content: center;
+  margin-bottom: 1.5rem;
+}
+/* styling for project images */
+.project-image {
+  border: solid 0.2rem black;
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--beige);
+}
+
+/* styling for footer */
+footer {
+  color: var(--blue);
+  background-color: var(--beige);
+  margin-top: auto;
+  padding-bottom: 1rem;
+  width: 100vw;
+  text-align: center;
+  bottom: 0;
+}
+
+/* footer icon styling */
+.contact-icons {
+  margin: 1rem;
+}
+
+#contact-nav {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+#contact-nav a {
+  color: var(--blue);
 }
 
 /* media query to handle hover state on mobile and tablet devices */

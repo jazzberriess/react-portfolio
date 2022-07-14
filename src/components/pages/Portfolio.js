@@ -1,3 +1,4 @@
+//import react
 import React from 'react';
 
 //import fontAwesome icons
@@ -12,7 +13,9 @@ import teamprofile from '../../assets/images/team-profile-generator.png';
 import socialnetwork from '../../assets/images/social-network-api.png';
 import weatherdashboard from '../../assets/images/weather-dashboard.png';
 
+//export Portfolio function
 export default function Portfolio() {
+  //array of portfolio project objects so that it can be looped over to generate the appropriate html for each project
   const portfolioProjects = [
     {
       id: 1,
@@ -67,11 +70,12 @@ export default function Portfolio() {
     },
   ];
 
+  //HTML for the projects. Includes mapping over the portfolioProjects array so that each project can be looped over
   return (
     <section>
       <div className="container">
         <div className="row">
-          <h2 id="my-work">My Work</h2>
+          <h2>My Work</h2>
           <p>
             A curated selection of some of the projects I've worked on. A full
             collection of my work is available on GitHub. There, you can also
@@ -85,15 +89,12 @@ export default function Portfolio() {
         <div key={item.id} className="row projects">
           <div className="ten columns u-max-full-width parent">
             <img
-              className="u-max-full-width"
-              id="main-project"
+              className="u-max-full-width project-image"
               src={item.image}
               alt={item.description}
             />
             <div className="text">
-              <a href={item.projectUrl} className="link-to-project">
-                {item.title}
-              </a>
+              <a href={item.projectUrl}>{item.title}</a>
 
               <a href={item.githubUrl} className="inverted-icons">
                 <FontAwesomeIcon icon={faGithub} size="lg" alt="gitHub icon" />

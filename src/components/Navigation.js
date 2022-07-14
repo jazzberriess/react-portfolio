@@ -1,33 +1,23 @@
+//import react
 import React from 'react';
 
-import './styles/normalize.css';
-import './styles/skeleton.css';
-import './styles/style.css';
-
+//export Navigation function
 export default function Navigation({ currentPage, handlePageChange }) {
+  //Navigation html
   return (
     <div className="container">
       <div className="row">
         <nav className="navigation">
-          <ul role="navigation" aria-label="Primary navigation">
-            <li className="two columns">
-              <a
-                href="#home"
-                onClick={() => handlePageChange('Home')}
-                aria-label="Skip to Hpme"
-                id="home-link"
-                className={currentPage === 'Home'}
-              >
-                Home
-              </a>
-            </li>
+          <ul
+            className="navigation-list"
+            role="navigation"
+            aria-label="Primary navigation"
+          >
             <li className="two columns">
               <a
                 href="#about-me"
                 onClick={() => handlePageChange('About')}
-                aria-label="Skip to About Me"
-                id="about-me-link"
-                className={currentPage === 'About'}
+                className={currentPage === 'About' ? 'nav-link-active' : ''}
               >
                 About
               </a>
@@ -36,9 +26,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
               <a
                 href="#my-work"
                 onClick={() => handlePageChange('Portfolio')}
-                aria-label="Skip to My Work Portfolio"
-                id="my-projects-link"
-                className={currentPage === 'Portfolio'}
+                className={currentPage === 'Portfolio' ? 'nav-link-active' : ''}
               >
                 Portfolio
               </a>
@@ -47,9 +35,7 @@ export default function Navigation({ currentPage, handlePageChange }) {
               <a
                 href="#contact"
                 onClick={() => handlePageChange('Contact')}
-                aria-label="Skip to Contact"
-                id="contact-me-link"
-                className={currentPage === 'Contact'}
+                className={currentPage === 'Contact' ? 'nav-link-active' : ''}
               >
                 Contact
               </a>
@@ -57,8 +43,9 @@ export default function Navigation({ currentPage, handlePageChange }) {
 
             <li className="two columns">
               <a
-                href="./assets/c-scappatura-technical-resume.pdf"
-                aria-label="Download Resume"
+                href="#resume"
+                onClick={() => handlePageChange('Resume')}
+                className={currentPage === 'Resume' ? 'nav-link-active' : ''}
               >
                 Resume
               </a>

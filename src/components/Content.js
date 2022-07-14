@@ -1,29 +1,38 @@
+//import react and useState method
 import React, { useState } from 'react';
+
+//import components
 import Header from './Header';
+import Footer from './Footer';
+
+//import pages
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
+import Resume from './pages/Resume';
 import Portfolio from './pages/Portfolio';
-import Footer from './Footer';
+
+//import skeleton CSS and stylesheet
 import './styles/normalize.css';
 import './styles/skeleton.css';
 import './styles/style.css';
 
-export default function PortfolioContainer() {
+//export PortfolioContainer function
+export default function Content() {
   const [currentPage, setCurrentPage] = useState('Home');
 
+  //render page conditionally based on current page location
   const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
     if (currentPage === 'Contact') {
       return <Contact />;
     }
     if (currentPage === 'Portfolio') {
       return <Portfolio />;
     }
+    if (currentPage === 'Resume') {
+      return <Resume />;
+    }
 
-    return <Home />;
+    return <About />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
