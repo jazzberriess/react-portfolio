@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.223f199b.css",
-    "main.js": "/react-portfolio/static/js/main.3822466d.js",
+    "main.css": "/react-portfolio/static/css/main.7050f2f7.css",
+    "main.js": "/react-portfolio/static/js/main.842b4f6f.js",
     "static/media/profile-image.jpg": "/react-portfolio/static/media/profile-image.3abfb98eaad6cd8bf68b.jpg",
     "static/media/book-taku.png": "/react-portfolio/static/media/book-taku.303aadb3a4533872f0aa.png",
     "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.3491ca078801a20ea97a.png",
@@ -9,12 +9,13 @@
     "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.ff3df272d08af6b508db.png",
     "static/media/social-network-api.png": "/react-portfolio/static/media/social-network-api.7a65a0bcd065bb7d129b.png",
     "static/media/team-profile-generator.png": "/react-portfolio/static/media/team-profile-generator.f2c7546774aaadb90901.png",
+    "static/media/c-scappatura-technical-resume.pdf": "/react-portfolio/static/media/c-scappatura-technical-resume.14a8fe610cd757055e10.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.223f199b.css.map": "/react-portfolio/static/css/main.223f199b.css.map",
-    "main.3822466d.js.map": "/react-portfolio/static/js/main.3822466d.js.map"
+    "main.7050f2f7.css.map": "/react-portfolio/static/css/main.7050f2f7.css.map",
+    "main.842b4f6f.js.map": "/react-portfolio/static/js/main.842b4f6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.223f199b.css",
-    "static/js/main.3822466d.js"
+    "static/css/main.7050f2f7.css",
+    "static/js/main.842b4f6f.js"
   ]
 }
