@@ -1,6 +1,8 @@
 //import react
 import React from 'react';
 
+import resume from '../../assets/c-scappatura-technical-resume.pdf';
+
 //export resume function
 export default function Resume() {
   return (
@@ -33,11 +35,8 @@ export default function Resume() {
             <li>Heroku for deployment</li>
           </ul>
         </div>
-        <div className="row" id="resume">
-          <a
-            href="./assets/c-scappatura-technical-resume.pdf"
-            aria-label="Download Resume"
-          >
+        <div className="row" id="resume-link">
+          <a href={resume} aria-label="Download Resume">
             Download Resume
           </a>
         </div>

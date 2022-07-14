@@ -14,12 +14,11 @@
 
 html,
 body {
-  scroll-behavior: smooth;
   min-height: 100vh;
   flex: 1;
   width: 100vw;
   font-family: 'Istok Web', sans-serif;
-  line-height: 2rem;
+  line-height: 3rem;
   background-color: var(--blue);
   color: var(--beige);
 }
@@ -97,7 +96,7 @@ main {
 /* setting font size for paragraphs and LI items */
 p,
 .skills li {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 
 /* Contact form styling */
@@ -142,18 +141,18 @@ button:active {
 }
 
 /* styling for resume link */
-#resume {
+#resume-link {
   font-size: 2.5rem;
   padding-bottom: 2rem;
 }
 
-#resume a {
+#resume-link a {
   text-decoration: none;
   color: #dfeefa;
 }
 
-#resume a:hover,
-#resume a:active {
+#resume-link a:hover,
+#resume-link a:active {
   font-size: 2.55rem;
 }
 
