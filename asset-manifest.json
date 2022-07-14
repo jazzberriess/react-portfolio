@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.7050f2f7.css",
-    "main.js": "/react-portfolio/static/js/main.842b4f6f.js",
+    "main.css": "/react-portfolio/static/css/main.97dd2324.css",
+    "main.js": "/react-portfolio/static/js/main.0dbddd4a.js",
     "static/media/profile-image.jpg": "/react-portfolio/static/media/profile-image.3abfb98eaad6cd8bf68b.jpg",
     "static/media/book-taku.png": "/react-portfolio/static/media/book-taku.303aadb3a4533872f0aa.png",
     "static/media/weather-dashboard.png": "/react-portfolio/static/media/weather-dashboard.3491ca078801a20ea97a.png",
@@ -11,11 +11,11 @@
     "static/media/team-profile-generator.png": "/react-portfolio/static/media/team-profile-generator.f2c7546774aaadb90901.png",
     "static/media/c-scappatura-technical-resume.pdf": "/react-portfolio/static/media/c-scappatura-technical-resume.14a8fe610cd757055e10.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.7050f2f7.css.map": "/react-portfolio/static/css/main.7050f2f7.css.map",
-    "main.842b4f6f.js.map": "/react-portfolio/static/js/main.842b4f6f.js.map"
+    "main.97dd2324.css.map": "/react-portfolio/static/css/main.97dd2324.css.map",
+    "main.0dbddd4a.js.map": "/react-portfolio/static/js/main.0dbddd4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.7050f2f7.css",
-    "static/js/main.842b4f6f.js"
+    "static/css/main.97dd2324.css",
+    "static/js/main.0dbddd4a.js"
   ]
 }
